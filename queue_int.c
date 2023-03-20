@@ -42,14 +42,4 @@ void pop (struct queue* vect){
 int peak(struct queue *vect){
     return vect->arr[0];
 }
-int main(){
-    struct queue vect;
-    push(&vect,5);
-    push(&vect,10);
-    push(&vect,7);
-    printf("%d \n", peak(&vect));
-    pop(&vect);
-    for (int i = 0; i < vect.len; i++){
-        printf("%d ", vect.arr[i]);
-    }
-}
+
