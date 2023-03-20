@@ -45,18 +45,3 @@ void pop (struct queue* vect){
 char peak(struct queue *vect){
     return vect->arr[0];
 }
-int main(){
-    struct queue vect;
-    push(&vect,'a');
-    push(&vect,'p');
-    push(&vect,'h');
-    push(&vect,'a');
-    push(&vect,'n');
-    push(&vect,'i');
-    printf("%c \n", peak(&vect));
-    pop(&vect);
-    pop(&vect);
-    for (int i = 0; i < vect.len; i++){
-        printf("%c", vect.arr[i]);
-    }
-}
