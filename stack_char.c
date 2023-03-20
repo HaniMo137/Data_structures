@@ -43,17 +43,3 @@ void pop (struct stack* vect){
     free(vect->arr);
     vect->arr = arr;
 }
-int main(){
-    struct stack vect;
-    push(&vect,'h');
-    push(&vect,'a');
-    push(&vect,'a');
-    pop(&vect);
-    push(&vect,'n');
-    push(&vect,'p');
-    pop(&vect);
-    push(&vect,'i');
-    for (int i = 0; i < vect.len;i++){
-        printf("%c",vect.arr[i]);
-    }
-}
