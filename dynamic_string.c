@@ -32,16 +32,4 @@ void append(struct string* vect,char k){
         vect->arr = arr;
     }
 }
-int main(){
-    int n;
-    scanf("%d", &n);
-    struct string vect;
-    for (int i = 0; i < n; i++){
-        char k;
-        scanf("%c", &k);
-        append(&vect,k);
-    }
-    for (int i = 0; i < n; i++){
-        printf("%c",vect.arr[i]);
-    }
-}
+
