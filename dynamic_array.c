@@ -30,16 +30,3 @@ void append(struct list* vect,int k){
         vect->arr = arr;
     }
 }
-int main(){
-    int n;
-    scanf("%d", &n);
-    struct list vect;
-    for (int i = 0; i < n; i++){
-        int k;
-        scanf("%d", &k);
-        append(&vect,k);
-    }
-    for (int i = 0; i < n; i++){
-        printf("%d ",vect.arr[i]);
-    }
-}
